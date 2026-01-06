@@ -73,10 +73,11 @@ Instead of modifying parameters, the URL path itself was modified to include a d
 ```http
 GET /api/user/1
 ```
-
+**Response:**
+```json
 {
   "note": "RM{E4sy_1d0r_0n_API}",
   "userid": 1,
   "username": "admin"
 }
-
+```
