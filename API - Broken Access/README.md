@@ -82,4 +82,7 @@ GET /api/user/1
 }
 ```
 ---
-- 'RM{E4sy_1d0r_0n_API}' -this is FLAG
+### FLAG
+```
+RM{E4sy_1d0r_0n_API}
+```
