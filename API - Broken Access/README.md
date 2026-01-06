@@ -48,20 +48,4 @@ Example response:
   "note": "",
   "userid": 2,
   "username": "dalli"
-}```
-
-
-🧪 Testing Attempts
-Attempt 1: Manipulating HTTP Method
-
-The HTTP method was changed from GET to POST, and a different user ID was sent in the request body.
-
-Result:
-
-Server responded with 405 Method Not Allowed
-
-Indicates strict HTTP method enforcement
-
-No change in returned data
-
-This confirmed that the endpoint does not accept alternative methods for accessing user data.
+}
