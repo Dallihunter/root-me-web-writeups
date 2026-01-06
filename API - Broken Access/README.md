@@ -49,3 +49,26 @@ Example response:
   "userid": 2,
   "username": "dalli"
 }
+
+
+## 🧪 Testing Attempts
+
+### Attempt 1: Manipulating HTTP Method
+
+The HTTP method was changed from `GET` to `POST`, and a different user ID was sent in the request body.
+
+**Result:**
+- Server responded with `405 Method Not Allowed`
+- No change in returned data
+
+This indicates that the endpoint strictly enforces the HTTP method, and user data cannot be accessed via request body manipulation.
+
+---
+
+### Attempt 2: Path-Based Object Reference
+
+Instead of modifying parameters, the URL path itself was modified to include a different user ID:
+
+```http
+GET /api/user/1
+
