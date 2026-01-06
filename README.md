@@ -23,3 +23,9 @@ For each challenge, I follow a simple and consistent approach:
 - Document findings with clear reproduction steps and impact analysis
 
 
+## Disclaimer
+
+All write-ups are for educational purposes only.
+The challenges are hosted by Root-Me and solved in a legal and authorized environment.
+
+
