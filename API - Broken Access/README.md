@@ -81,3 +81,5 @@ GET /api/user/1
   "username": "admin"
 }
 ```
+---
+- 'RM{E4sy_1d0r_0n_API}' -this is FLAG
