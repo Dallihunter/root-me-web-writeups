@@ -49,6 +49,7 @@ Example response:
   "userid": 2,
   "username": "dalli"
 }
+```
 
 
 ## 🧪 Testing Attempts
@@ -71,4 +72,6 @@ Instead of modifying parameters, the URL path itself was modified to include a d
 
 ```http
 GET /api/user/1
+```
+
 
