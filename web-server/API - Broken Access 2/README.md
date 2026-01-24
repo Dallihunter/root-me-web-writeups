@@ -10,23 +10,24 @@ In this challenge, we are given a REST API exposed via Swagger with the followin
 /api/user/{userid}
 /api/note
 ```
-The goal is to access the admin note, which contains the flag.
 
-🔍 Initial Observations
+The goal is to access the **admin note**, which contains the flag.
 
-After creating multiple users and logging in, we observe that:
+---
 
-Each user receives a secret after authentication
+## 🔍 Initial Observations
 
-This secret is required to access protected endpoints such as:
+After creating multiple users and authenticating to the API, we can observe that:
 
-/api/profile
-
-/api/note
-
-Different users receive secrets with a common suffix
+- Each user receives a `secret` after login
+- This `secret` is required to access protected endpoints such as:
+  - `/api/profile`
+  - `/api/note`
+- Secrets generated for different users share a **common suffix**
 
 Example secret:
+
+
 ```5dceb7a1-f933-11f0-8a0a-0242ac100024```
 This immediately suggests that the secret is not random.
 
