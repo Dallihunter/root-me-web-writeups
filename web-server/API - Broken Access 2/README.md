@@ -70,7 +70,8 @@ returns:
   "userid": 1,
   "username": "admin",
   "creation_date": "2026-01-24 03:10:08.785667"
-}```
+}
+```
 
 This is critical because:
 
