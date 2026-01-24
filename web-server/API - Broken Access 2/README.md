@@ -94,7 +94,7 @@ the user is authorized to access the requested resource
 
 As a result, knowing the admin secret grants full access to admin data.
 
-🧪 Exploitation Strategy
+## 🧪 Exploitation Strategy
 Key observations:
 
 All users share the same UUID suffix:
@@ -120,7 +120,7 @@ Brute‑force only a very small range of 100ns offsets (≈ 20 values)
 This avoids unnecessary brute‑forcing and keeps the attack efficient.
 
 
-🐍 Proof of Concept – UUID Generator
+## 🐍 Proof of Concept – UUID Generator
 
 The following script generates a short list of possible admin secrets
 ```
@@ -159,7 +159,7 @@ Each generated UUID can then be tested manually against:
 
 ```/api/profile?secret=<UUID>```
 
-🏁 Flag Retrieval
+## 🏁 Flag Retrieval
 
 One of the generated secrets successfully authenticates as the admin user.
 
