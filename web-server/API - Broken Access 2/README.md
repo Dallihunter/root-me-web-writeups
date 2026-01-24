@@ -32,43 +32,54 @@ Example secret:
 
 
 ```5dceb7a1-f933-11f0-8a0a-0242ac100024```
-This immediately suggests that the secret is not random.
 
-🧠 Identifying the Secret Format
+This indicates that the secret is not randomly generated.
 
-A quick inspection shows that the secret matches the structure of a UUID.
+---
 
-Checking the UUID version reveals:
+## 🧠 Identifying the Secret Format
 
-The secret is a UUID version 1
+The secret matches the structure of a UUID.
 
-UUIDv1 is timestamp‑based
+Further inspection reveals that:
+- The secret is a **UUID version 1**
+- UUIDv1 is **timestamp-based**
 
-This is a critical finding, because timestamp‑based identifiers are predictable.
+Since timestamp-based identifiers are predictable, this represents a serious security weakness.
+
+---
+
+## 🚨 Information Disclosure
+
+The API endpoint:
 
 
-🚨 Information Disclosure Vulnerability
-
-Using the endpoint:
 ```GET /api/user/{userid}```
-We can retrieve user information without authentication.
-Requesting the admin user:
+
+returns user information **without authentication**.
+
+Querying the admin user:
+
+
 ```GET /api/user/1```
-Returns:
-```{
+
+returns:
+
+```json
+{
   "userid": 1,
   "username": "admin",
   "creation_date": "2026-01-24 03:10:08.785667"
 }
-```
 
-This is a major issue because:
 
-UUIDv1 encodes the creation timestamp
+This is critical because:
+
+UUIDv1 encodes the account creation timestamp
 
 The admin creation date is publicly accessible
 
-Therefore, the admin secret can be reconstructed
+The admin authentication secret can therefore be reconstructed
 
 
 🔐 Broken Access Control
