@@ -1,7 +1,10 @@
-#🛡️ API – Broken Access 2 (Root‑Me)
-##📌 Challenge Overview
+# 🛡️ API – Broken Access 2 (Root-Me)
 
-In this challenge, we are given a REST API exposed via Swagger with the following endpoints:
+## 📌 Challenge Overview
+
+In this challenge, we are given a REST API exposed through Swagger with the following endpoints:
+
+
 
 ```
 /api/signup
