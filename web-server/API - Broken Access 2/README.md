@@ -75,11 +75,11 @@ returns:
 
 This is critical because:
 
-UUIDv1 encodes the account creation timestamp
+- UUIDv1 encodes the account creation timestamp
 
-The admin creation date is publicly accessible
+- The admin creation date is publicly accessible
 
-The admin authentication secret can therefore be reconstructed
+- The admin authentication secret can therefore be reconstructed
 
 
 🔐 Broken Access Control
