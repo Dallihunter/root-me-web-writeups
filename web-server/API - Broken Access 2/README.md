@@ -82,7 +82,7 @@ This is critical because:
 - The admin authentication secret can therefore be reconstructed
 
 
-🔐 Broken Access Control
+## 🔐 Broken Access Control
 
 The API authentication mechanism relies only on the secret value.
 
